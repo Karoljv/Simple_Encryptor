@@ -1,15 +1,18 @@
-
-from random import randrange
 from table_conversion import TableConversion
+from wikipedia import summary
 
 class Coder:
 
     def __init__(self,alfabet = TableConversion.alfabet,table_conversion=TableConversion.create_key()) -> None:
+        
         self.alfabet = alfabet
         self.table_conversion = table_conversion
 
     def coder(self) -> None:
         converted_data = ''
+        with open("text.txt","w",encoding='utf-8') as f1:
+            f1.write(summary("Python (programming language)"))
+
         with open("text.txt","r",encoding='utf-8') as f1:
             text = f1.read()
             for i in range(len(text)):
@@ -41,6 +44,7 @@ class Coder:
 koder = Coder()
 koder.coder()
 koder.decoding()
+
 
             
 
