@@ -2,4 +2,5 @@
 
 
 Enscrypting and descrypting based on conversion table
-(Wikipedia text as an example input)
+(Wikipedia text as an example input).
+Creates json file with conversion table
