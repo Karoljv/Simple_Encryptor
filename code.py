@@ -7,7 +7,7 @@ class Coder:
         
         self.alfabet = alfabet
         self.table_conversion = table_conversion
-
+    
     def coder(self) -> None:
         converted_data = ''
         with open("text.txt","w",encoding='utf-8') as f1:
